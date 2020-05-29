@@ -1,0 +1,81 @@
+.video-card {
+  max-width: 288px;
+  height: 280px;
+  margin-top: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.video-card:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.video-card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em 1em 0;
+}
+
+.video-card_header-image {
+  width: 288px;
+  height: 164px;
+}
+
+.video-card_title {
+  height: 36px;
+  color: #2e3134;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  padding: 0;
+  margin-top: 0;
+}
+
+.video-card_title-image {
+  width: 28px;
+  height: 28px;
+}
+
+.video-card_details {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.video-card_time,
+.video-card_distance {
+  width: auto;
+  height: 12px;
+  color: #2e3134;
+  padding-right: 0.5em;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.timer-image,
+.distance-image {
+  padding-right: 0.2em;
+}
+
+.video-card_view-details {
+  padding-top: 0.5em;
+  width: auto;
+  height: 16px;
+  color: #0069d2;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-left: 1em;
+}

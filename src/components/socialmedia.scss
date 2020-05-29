@@ -1,0 +1,11 @@
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: solid 2px #585a5d;
+  border-bottom: solid 2px #585a5d;
+  img {
+    padding: 1em;
+  }
+}

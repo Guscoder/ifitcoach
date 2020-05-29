@@ -1,0 +1,93 @@
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  color: rgba(46, 49, 52, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+  background-color: #fff;
+  @media only screen and (max-width: 835px) {
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 560px) {
+    max-width: 100vw;
+  }
+
+  a {
+    color: rgba(46, 49, 52, 0.8);
+    text-decoration: none;
+  }
+
+  .nav-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 46px;
+    width: auto;
+    border-bottom: 1px solid #d5d6d6;
+    a {
+      padding: 0 2em;
+      border-right: 1px solid #d5d6d6;
+      @media only screen and (max-width: 835px) {
+        border: none;
+      }
+    }
+    @media only screen and (max-width: 835px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .nav-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    width: auto;
+
+    @media only screen and (max-width: 835px) {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      padding: 0 2em;
+    }
+    .ifit-coach-img {
+      padding: 0 2em;
+    }
+
+    button {
+      margin-right: 2em;
+      @media only screen and (max-width: 835px) {
+        width: 50%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .nav-bottom > * {
+    margin: 0.5em 0;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .ifit-coach-img {
+    padding: 0;
+  }
+  .nav-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    > * {
+      padding: 0.5em;
+    }
+  }
+}

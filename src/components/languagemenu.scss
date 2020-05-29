@@ -1,0 +1,36 @@
+.language-container {
+  position: absolute;
+  left: 1em;
+  width: 150px;
+  @media screen and (max-width: 715px) {
+    position: relative;
+    left: 0;
+  }
+}
+
+.language-options > .mySelect__control {
+  border: none;
+}
+.mySelect__control {
+  background-color: #2e3134 !important;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.mySelect__value-container > .mySelect__single-value {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.mySelect__menu {
+  background-color: #2e3134 !important;
+  color: hsl(0, 0%, 50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}

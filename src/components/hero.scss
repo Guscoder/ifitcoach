@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background-image: url("../assets/images/gmapsinworkout.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey;
+
+  @media screen and (max-width: 767px) {
+    background-position: unset;
+    background-size: cover;
+    width: 100vw;
+  }
+  @media screen and (max-width: 450px) {
+    height: 23vh;
+  }
+  button {
+    width: 392px !important;
+    height: 56px !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12) !important;
+    border-radius: 4px;
+    background-color: #0069d2;
+    @media screen and (max-width: 450px) {
+      width: auto !important;
+      height: 30px !important;
+      padding: 0 1em;
+    }
+  }
+}
+
+.hero-title {
+  text-align: center;
+  padding: 0 1.5em;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 90px;
+  opacity: 0;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  animation-fill-mode: forwards;
+  @media screen and (max-width: 999px) {
+    font-size: 3em;
+    line-height: normal;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,35 @@
+.terms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  @media screen and (max-width: 999px) {
+    justify-content: flex-end;
+  }
+  @media screen and (max-width: 635px) {
+    justify-content: center;
+    height: auto;
+  }
+
+  a {
+    padding: 0 1em;
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+  .terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: 635px) {
+      > * {
+        padding: 1em 0.5em;
+      }
+    }
+  }
+}
